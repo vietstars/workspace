@@ -7,17 +7,17 @@
     <title>Workspace | {{ title }}</title>
     <meta name="description" content="">
     <meta name="author" content="">
-    <link href="{{ url_for('static', filename='img/favicon.ico') }}" rel="shortcut icon">
-    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/awesome.css') }}" rel="stylesheet">
-    <link href="{{ url_for('static', filename='css/all.css') }}" rel="stylesheet">
+    <link href="{{ url_for('static', filename='img/favicon.ico') }}?ver=0.00.1" rel="shortcut icon">
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}?ver=0.00.1" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/awesome.css') }}?ver=0.00.1" rel="stylesheet">
+    <link href="{{ url_for('static', filename='css/all.css') }}?ver=0.00.1" rel="stylesheet">
 </head>
 <body>
     {% include "default/navbar.html" %}
     {% block body %}{% endblock %}
-    <script src="{{ url_for('static', filename='js/jquery-3.4.0.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/popper.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
-    <script src="{{ url_for('static', filename='js/all.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/jquery-3.4.0.js') }}?ver=0.00.1"></script>
+    <script src="{{ url_for('static', filename='js/popper.min.js') }}?ver=0.00.1"></script>
+    <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}?ver=0.00.1"></script>
+    <script src="{{ url_for('static', filename='js/all.js') }}?ver=0.00.1"></script>
 </body>
 </html>
