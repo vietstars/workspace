@@ -3314,6 +3314,7 @@ input {
     font-family: "Font Awesome 5 Pro", "Font Awesome 5 Free";
     font-weight: 700;
     content: "\F107";
+    border:0!important;
   }
   &:empty::after {
     margin-left: 0;

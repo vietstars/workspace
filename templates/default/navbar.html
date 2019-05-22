@@ -1,4 +1,5 @@
         <header class="header header-transparent" id="header-main">
+            {% if title != 'Register' %}
             <div id="navbar-top-main" class="navbar-top navbar-dark bg-light border-bottom">
                 <div class="container px-0">
                     <div class="navbar-nav align-items-center">
@@ -65,7 +66,8 @@
                     </div>
                 </div>
             </div>
-            <nav class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-dark bg-light" id="navbar-main">
+            {% endif %}
+            <nav class="navbar navbar-main navbar-expand-lg navbar-transparent {% if title != 'Register' %}navbar-dark{% else %}navbar-light{% endif %}" id="navbar-main">
                 <div class="container px-lg-0">
                     <a class="navbar-brand mr-lg-5" href="index.html">
                         <img src="{{ url_for('static', filename='img/lampart.svg') }}" height="50px">Lampart
@@ -990,9 +992,9 @@
                             </li>
                             <li class="nav-item mr-0">
                                 <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="nav-link d-lg-none">Purchase now</a>
-                                <a href="https://themes.getbootstrap.com/product/purpose-website-ui-kit/" target="_blank" class="btn btn-sm btn-white rounded-pill btn-icon rounded-pill d-none d-lg-inline-flex" data-toggle="tooltip" data-placement="left" title="" data-original-title="Go to Bootstrap Themes">
-                                    <span class="btn-inner--icon"><i class="far fa-shopping-cart"></i></span>
-                                    <span class="btn-inner--text">Purchase now</span>
+                                <a href="{{ url_for('register') }}" target="_blank" class="btn btn-sm btn-white rounded-pill btn-icon rounded-pill d-none d-lg-inline-flex" data-toggle="tooltip" data-placement="left" title="" data-original-title="Go to Bootstrap Themes">
+                                    <span class="btn-inner--icon"><i class="fal fa-users-medical"></i></span>
+                                    <span class="btn-inner--text">Register</span>
                                 </a>
                             </li>
                         </ul>
